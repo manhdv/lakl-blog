@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { SunIcon, MoonIcon } from "./util/Icons";
+import { IconSunHigh, IconMoon } from "@tabler/icons-react";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("");
@@ -72,9 +72,9 @@ export default function ThemeToggle() {
       title={`Activate ${theme === "light" ? "dark" : "light"} mode`}
     >
       {theme === "light" ? (
-        <MoonIcon className="active:fill-foreground size-5" />
+        <IconMoon className="active:fill-foreground size-5" />
       ) : (
-        <SunIcon className="active:fill-foreground size-5" />
+        <IconSunHigh className="active:fill-foreground size-5" />
       )}
     </button>
   );

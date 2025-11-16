@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import type { BlogType } from "../../content/content.config";
+import type { BlogType } from "../../content.config";
 
-const blogs = await getCollection("blog");
+const blogs = await getCollection("blogs");
 const tags = [
   ...new Set(blogs.map((blog: BlogType) => blog.data.tags).flat()),
 ].sort();
@@ -17,7 +17,7 @@ const tags = [
 >
   <div class="center">
     <h1 class="heading">Tags</h1>
-    <ul class="mx-8 my-3 grid space-y-3">
+    <ul class="mx-8 my-3 gap-3 space-y-3">
       {
         tags.map((tag) => {
           return (

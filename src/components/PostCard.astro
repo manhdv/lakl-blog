@@ -1,5 +1,5 @@
 ---
-import { RightArrowIcon, RightIcon } from "../components/util/Icons";
+import { IconArrowRight } from "@tabler/icons-react";
 
 const { title, date, url, tags } = Astro.props;
 ---
@@ -10,7 +10,6 @@ const { title, date, url, tags } = Astro.props;
 >
   <div class="mx-4 mt-2 flex items-center justify-between gap-6">
     <div class="flex items-center gap-3">
-      <!-- <RightIcon className="size-5 stroke-1 opacity-80 group-hover:size-0" /> -->
       <h3
         class="text-foreground group-hover:text-background self-start rounded-lg text-xl group-hover:font-semibold group-hover:tracking-wide"
       >
@@ -23,7 +22,7 @@ const { title, date, url, tags } = Astro.props;
       >
         {date}
       </p>
-      <RightArrowIcon
+      <IconArrowRight
         className="stroke-background size-0 stroke-2 group-hover:size-6"
       />
     </div>

@@ -3,10 +3,10 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PostCard from "../../../components/PostCard.astro";
 import { getCollection } from "astro:content";
 import Pagination from "../../../components/Pagination.astro";
-import type { BlogType } from "../../../content/content.config";
+import type { BlogType } from "../../../content.config";
 
 export async function getStaticPaths({ paginate }: { paginate: any }) {
-  const blogs = await getCollection("blog");
+  const blogs = await getCollection("blogs");
   const tags = [
     ...new Set(blogs.map((blog: BlogType) => blog.data.tags).flat()),
   ];

@@ -1,0 +1,38 @@
+---
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+---
+
+<div class="bg-accent grid grid-cols-2 gap-3 rounded-xl p-1">
+  <a
+    href="/giscus-comments-in-luna"
+    class="ring-background group bg-accent hover:bg-background w-full rounded-lg px-6 py-3 pb-5 hover:ring-3 active:ring-0"
+  >
+    <div class="flex items-center justify-end gap-3">
+      <IconArrowLeft
+        className="stroke-background size-6 stroke-1 opacity-100"
+      />
+      <p class="paragraph text-background group-hover:text-accent">prev</p>
+    </div>
+    <h1
+      class="group-hover:text-foreground text-background text-end text-2xl font-semibold group-hover:font-normal"
+    >
+      How to integrate giscus comments into Luna
+    </h1>
+  </a>
+  <a
+    href="/markdown-showcase"
+    class="ring-background group hover:bg-background bg-accent w-full rounded-lg px-6 py-3 pb-5 hover:ring-3 active:ring-0"
+  >
+    <div class="flex items-center justify-start gap-3">
+      <p class="paragraph text-background group-hover:text-accent">next</p>
+      <IconArrowRight
+        className="stroke-background group-hover:stroke-accent size-6 stroke-1 opacity-100"
+      />
+    </div>
+    <h1
+      class="group-hover:text-foreground text-background text-2xl font-semibold group-hover:font-normal"
+    >
+      Luna Markdown Showcase: A Complete Guide
+    </h1>
+  </a>
+</div>

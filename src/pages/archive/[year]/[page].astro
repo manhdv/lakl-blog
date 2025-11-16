@@ -1,12 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-import type { BlogType } from "../../../content/content.config";
+import type { BlogType } from "../../../content.config";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PostCard from "../../../components/PostCard.astro";
 import Pagination from "../../../components/Pagination.astro";
-import Category from "../../../components/Category.astro";
+import Year from "../../../components/Year.astro";
 
-const blogs = await getCollection("blog");
+const blogs = await getCollection("blogs");
 const years = [
   ...new Set(
     blogs.map((blog: BlogType) => new Date(blog.data.date).getFullYear()),
@@ -14,7 +14,7 @@ const years = [
 ];
 
 export async function getStaticPaths({ paginate }: { paginate: any }) {
-  const blogs = await getCollection("blog");
+  const blogs = await getCollection("blogs");
   const years = [
     ...new Set(
       blogs.map((blog: BlogType) => new Date(blog.data.date).getFullYear()),
@@ -52,7 +52,7 @@ const { year } = Astro.params as { year: string };
   <div class="center">
     <div class="flex items-center gap-8">
       <a href="/archive/1" class="heading">Archive</a>
-      <Category years={years} />
+      <Year years={years} />
     </div>
     <ul class="my-3 space-y-3">
       {

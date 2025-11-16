@@ -1,5 +1,9 @@
 ---
-import { CalendarIcon, ClockIcon, TagIcon } from "../util/Icons";
+import {
+  IconCalendarWeek,
+  IconClockHour3,
+  IconTagFilled,
+} from "@tabler/icons-react";
 
 const { frontmatter, readTime } = Astro.props;
 ---
@@ -10,7 +14,7 @@ const { frontmatter, readTime } = Astro.props;
 <div class="mt-2 space-y-1">
   <div class="flex gap-8">
     <div class="flex gap-2">
-      <CalendarIcon className="size-5 stroke-1" />
+      <IconCalendarWeek className="size-5 stroke-1" />
       <p class="font-mono text-base opacity-90">
         {
           frontmatter.date
@@ -24,15 +28,15 @@ const { frontmatter, readTime } = Astro.props;
       </p>
     </div>
     <div class="flex gap-2">
-      <ClockIcon className="size-5 stroke-1" />
+      <IconClockHour3 className="size-5 stroke-1" />
       <p class="font-mono text-base opacity-90">{readTime} min read</p>
     </div>
   </div>
   <div class="group flex items-center gap-2">
-    <TagIcon
+    <IconTagFilled
       className="fill-background stroke-foreground group-hover:fill-foreground group-hover:stroke-background size-5 stroke-1"
     />
-    <div class="space-x-1">
+    <div class="space-x-2">
       {
         frontmatter.tags.map((tag: string) => (
           <a

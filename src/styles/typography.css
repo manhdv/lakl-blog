@@ -50,10 +50,16 @@
     @apply space-y-6 text-lg leading-relaxed opacity-90;
   }
   .link {
-    @apply text-accent active:text-foreground selection:text-foreground decoration-dashed underline-offset-3 transition-all duration-100 ease-in-out hover:underline hover:underline-offset-6;
+    @apply text-accent active:text-foreground decoration-dashed underline-offset-3 transition-all duration-100 ease-in-out hover:underline hover:underline-offset-6;
+  }
+  .figure {
+    @apply relative my-6;
   }
   .image {
-    @apply h-auto w-full object-cover;
+    @apply ring-accent h-auto w-full object-cover ring-1 select-none group-hover:brightness-75;
+  }
+  .figcaption {
+    @apply absolute inset-0 flex items-center justify-center bg-black/40 p-3 text-center text-white/86 opacity-0 group-hover:opacity-100 sm:text-xl md:text-2xl lg:text-3xl;
   }
   .index {
     @apply selection:text-foreground text-foreground hover:text-accent active:text-foreground decoration-dashed underline-offset-3 transition-all duration-100 ease-in-out hover:underline hover:underline-offset-6;
@@ -79,19 +85,19 @@
     h2 {
       @apply pt-13 pb-3 text-4xl;
       a {
-        @apply text-foreground hover:text-foreground selection:text-background decoration-solid decoration-1 underline-offset-6 hover:underline hover:underline-offset-13 active:no-underline;
+        @apply text-foreground no-underline hover:no-underline;
       }
     }
     h3 {
       @apply pt-6 pb-2 text-3xl;
       a {
-        @apply text-foreground hover:text-foreground selection:text-background decoration-solid decoration-1 underline-offset-6 hover:underline hover:underline-offset-8 active:no-underline;
+        @apply text-foreground no-underline hover:no-underline;
       }
     }
     h4 {
       @apply pt-3 pb-1 text-2xl;
       a {
-        @apply text-foreground hover:text-foreground selection:text-background decoration-solid decoration-1 underline-offset-6 hover:underline hover:underline-offset-3 active:no-underline;
+        @apply text-foreground no-underline hover:no-underline;
       }
     }
 
@@ -102,7 +108,7 @@
 
     /* url */
     a {
-      @apply text-accent active:text-foreground selection:text-foreground decoration-dashed underline-offset-3 transition-all duration-100 ease-in-out hover:underline hover:underline-offset-6;
+      @apply text-accent active:text-foreground decoration-dashed underline-offset-3 transition-all duration-100 ease-in-out hover:underline hover:underline-offset-6;
     }
 
     /* quote */
@@ -117,23 +123,23 @@
 
     /* description */
     em {
-      @apply font-serif text-[1rem] opacity-70;
+      @apply font-serif text-lg opacity-80 dark:opacity-90;
     }
 
     /* keyboard */
     kbd {
-      @apply rounded-lg px-2 py-0.5 font-mono text-base ring-1;
+      @apply rounded-lg px-2 py-0.5 font-sans text-base ring-1;
     }
 
     /*  code */
     .astro-code {
-      @apply my-6 p-6;
+      @apply ring-accent my-6 p-6 ring-1;
     }
     .astro-code code {
       @apply bg-inherit;
     }
     code {
-      @apply bg-accent text-background rounded-lg px-2 py-0.5 font-mono text-base opacity-90;
+      @apply bg-accent text-background rounded-lg px-2 py-0.5 font-mono text-base font-semibold opacity-90;
     }
 
     /* lists */
@@ -160,7 +166,7 @@
 
     /* table */
     table {
-      @apply mx-auto my-8 opacity-90;
+      @apply mx-auto my-8 w-full opacity-90;
     }
     tr {
       @apply visible;
@@ -174,15 +180,15 @@
 
     /* image block */
     figure {
-      @apply my-6 flex flex-col items-center;
+      @apply relative my-6;
     }
     figcaption {
-      @apply text-accent visible py-2 text-sm;
+      @apply absolute inset-0 flex items-center justify-center bg-black/40 p-3 text-center text-white/86 opacity-0 group-hover:opacity-100 sm:text-xl md:text-2xl lg:text-3xl;
     }
 
     /* media */
     img {
-      @apply ring-accent ring-2 select-none;
+      @apply ring-accent ring-1 select-none group-hover:brightness-75;
     }
     video {
       @apply ring-accent my-6 ring-2 select-none;

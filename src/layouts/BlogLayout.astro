@@ -1,8 +1,7 @@
 ---
-import ProgressBar from "../components/blog/ProgressBar";
+import ProgressBar from "../components/ProgressBar";
 import BaseLayout from "./BaseLayout.astro";
-import Title from "../components/blog/Title.astro";
-import Index from "../components/blog/Index";
+import Title from "../components/Title.astro";
 
 const { frontmatter, headings, readTime } = Astro.props;
 ---
@@ -15,7 +14,6 @@ const { frontmatter, headings, readTime } = Astro.props;
 >
   <ProgressBar client:load />
   <article>
-    <!-- <Index client:load headings={headings} /> -->
     <div class="center">
       <Title frontmatter={frontmatter} readTime={readTime} />
       <section class="markdown">

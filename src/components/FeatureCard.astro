@@ -1,10 +1,10 @@
 ---
 import {
-  CalendarIcon,
-  RightArrowIcon,
-  RightIcon,
-  ClockIcon,
-} from "../components/util/Icons";
+  IconArrowRight,
+  IconChevronRight,
+  IconCalendarWeek,
+  IconClockHour3,
+} from "@tabler/icons-react";
 
 const { title, date, url, tags, readTime } = Astro.props;
 ---
@@ -20,10 +20,10 @@ const { title, date, url, tags, readTime } = Astro.props;
       {title}
     </h3>
     <div class="mt-1 flex">
-      <RightArrowIcon
+      <IconArrowRight
         className="stroke-background size-0 stroke-2 group-hover:size-6"
       />
-      <RightIcon
+      <IconChevronRight
         className="stroke-foreground size-6 stroke-1 group-hover:size-0"
       />
     </div>
@@ -31,7 +31,7 @@ const { title, date, url, tags, readTime } = Astro.props;
   <div>
     <div class="mx-4 mb-3 flex flex-wrap gap-6 group-hover:mb-0">
       <div class="flex gap-1 font-mono">
-        <CalendarIcon
+        <IconCalendarWeek
           className="stroke-foreground size-4 stroke-1 group-hover:size-0"
         />
         <p class="text-sm opacity-90 group-hover:text-[0rem]">
@@ -39,7 +39,7 @@ const { title, date, url, tags, readTime } = Astro.props;
         </p>
       </div>
       <div class="flex gap-1 font-mono">
-        <ClockIcon
+        <IconClockHour3
           className="stroke-foreground size-4 stroke-1 group-hover:size-0"
         />
         <p class="text-sm opacity-90 group-hover:text-[0rem]">

@@ -1,19 +1,28 @@
 ---
-import Seo from "../components/util/Seo.astro";
+import Seo from "../components/Seo.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 const { title, description, image, url } = Astro.props;
+import "@fontsource-variable/space-grotesk";
+import "@fontsource/ibm-plex-mono";
 import "../styles/global.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <Seo {title} {description} {image} {url} />
+    <Seo {title} {description} {url} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Luna"
+      href={new URL("rss.xml", Astro.site)}
+    />
     <script is:inline>
       const savedTheme = localStorage.getItem("theme");
       const prefersDark = window.matchMedia(

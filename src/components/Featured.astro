@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import type { BlogType } from "../content/content.config";
+import type { BlogType } from "../content.config";
 import FeatureCard from "./FeatureCard.astro";
 
-const blogs: BlogType[] = await getCollection("blog");
+const blogs: BlogType[] = await getCollection("blogs");
 const blogs_ = blogs.map((blog) => {
   const words = (blog.body ?? "").split(/\s+/).filter(Boolean).length;
   const minutes = Math.ceil(words / 200);
