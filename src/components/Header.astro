@@ -1,6 +1,6 @@
 ---
 import ThemeToggle from "./ThemeToggle";
-import { RssIcon, SearchIcon } from "../components/util/Icons";
+import { IconRss, IconSearch } from "@tabler/icons-react";
 import Navigation from "./Navigation.astro";
 ---
 
@@ -19,12 +19,9 @@ import Navigation from "./Navigation.astro";
 
     <div class="flex items-center justify-center gap-4">
       <ThemeToggle client:load />
-      <a href="/rss.xml" target="blank" aria-label="rss" title="rss"
-        ><RssIcon className="active-foreground size-5" /></a
+      <a href="/rss.xml" aria-label="rss" title="rss"
+        ><IconRss className="active-foreground size-5" /></a
       >
-      <button aria-label="search" title="search">
-        <SearchIcon className="active:fill-foreground size-5" />
-      </button>
     </div>
   </div>
 </header>

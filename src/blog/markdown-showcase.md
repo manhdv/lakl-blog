@@ -4,23 +4,14 @@ title: "Luna Markdown Showcase: A Complete Guide"
 description: "A comprehensive showcase of all Markdown features and typography styles available in Luna blog posts."
 date: 2025-11-09
 author: "Rahul"
+tags: ["luna", "markdown", "guide", "showcase"]
 image:
   url: "https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg"
   alt: "Still waters reflecting clouds and distant mountains during sunset"
   caption: "photo by xyz : pixabay"
-tags: ["luna", "markdown", "guide", "showcase"]
 
 featured: true
 ---
-
-<figure>
-  <img
-    class="image"
-    src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    alt="Person writing in a notebook"
-  />
-  <figcaption>The art of writing beautiful content</figcaption>
-</figure>
 
 ## Basic Text Formatting
 
@@ -179,7 +170,3 @@ This post demonstrated all the Markdown features available in Luna blog posts. R
 3. Keep your content readable
 
 > Thanks for reading this comprehensive guide to Luna's Markdown features!
-
-```
-
-```

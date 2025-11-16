@@ -1,6 +1,6 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import type { BlogType } from "../content/content.config";
+import type { BlogType } from "../content.config";
 import type { APIContext } from "astro";
 
 export async function GET(context: APIContext) {
@@ -10,15 +10,18 @@ export async function GET(context: APIContext) {
     });
   }
 
-  const blogs: BlogType[] = await getCollection("blog");
+  const blogs: BlogType[] = await getCollection("blogs");
   return rss({
+    stylesheet: "/pretty-feed-v3.xsl",
     title: "Luna",
     description: "Static minimal astro blog starter",
     site: context.site,
+    trailingSlash: false,
     items: blogs.map((blog: BlogType) => ({
       title: blog.data.title,
       description: blog.data.description,
       pubDate: blog.data.date,
+      author: blog.data.author,
       link: `/${blog.data.slug}`,
     })),
   });

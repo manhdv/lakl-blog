@@ -39,8 +39,6 @@ export default defineConfig({
     "/tags/[tag]": "/tags/[tag/1",
     "/rss": "/rss.xml",
     "/feed": "/rss.xml",
-    "/sitemap": "/sitemap-0.xml",
-    "/sitemap.xml": "/sitemap-0.xml",
   },
 
   output: "static",

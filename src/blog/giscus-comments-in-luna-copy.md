@@ -1,31 +1,38 @@
 ---
-slug: "giscus-comments-in-luna"
+slug: "giscus-comments-in-luna-copy"
 title: "How to integrate Giscus comments into Luna"
 description: "Comment function on a static blog hosted on Github Pages with Giscus"
 date: 2022-03-20
-tags: ["luna", "customize", "comments"]
+author: "Rahul"
+image:
+  url: "https://cdn.pixabay.com/photo/2022/06/21/21/56/konigssee-7276585_1280.jpg"
+  alt: "Mountain landscape"
+  caption: "photo by xyz : pixabay"
+tags: ["luna", "customize", "comments", "giscus"]
 
-featured: true
+featured: false
 ---
 
-## [How Giscus works](#how-giscus-works)
+## How Giscus works
 
 [Giscus uses the Github API](https://github.com/giscus/giscus?tab=readme-ov-file#how-it-works) to read and store comments made by Github users in the Discussions associated with a repository.
 
 <br />
 
-Embed the Giscus client-side script bundle on your site, configure it with the correct repository URL, and users can view and write comments (when logged into Github).
+Embed the Giscus client-side script bundle on your site, configure it with the
+correct repository URL, and users can view and write comments (when logged into
+Github).
 
 <br />
 
 The approach is serverless, as the comments are stored on Github and dynamically
 loaded from there on client side, hence perfect for a static blog, like Luna.
 
-## [Setting up Giscus](#setting-up-giscus)
+## Setting up Giscus
 
 Giscus can be set up easily on [giscus.app](https://giscus.app/), but I will outline the process shortly still.
 
-### [Prerequisites](#prerequisites)
+### Prerequisites
 
 Prerequisites to get Giscus working are
 
@@ -33,11 +40,7 @@ Prerequisites to get Giscus working are
 - the [Giscus app](https://github.com/apps/giscus)
 - the [Discussions](https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/enabling-or-disabling-github-discussions-for-a-repository) feature is turned on for your repository
 
-#### [Enable Discussions](#enable-discussions)
-
-To enable Discussions for your repository, navigate to the `Settings` tab of your repository, then select `Discussions` from the sidebar. Finally, check the box labeled `Enable Discussions for this repository`.
-
-### [Configuring Giscus](#configuring-giscus)
+### Configuring Giscus
 
 Next, configuring Giscus is necessary. In most cases, the preselected defaults are suitable, and you should only modify them if you have a **specific reason** and know what you are doing. Don't worry too much about making the **wrong choices**; you can always adjust the **configuration** later on.
 
@@ -54,7 +57,7 @@ However you need to
 
 After configuring the _settings_, Giscus provides you with a generated `<script>` tag, which you will need in the _next steps_.
 
-## [Simple script tag](#simple-script-tag)
+## Simple script tag
 
 You should now have a script tag that looks like this:
 

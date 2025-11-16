@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { CloseIcon, MenuIcon } from "../util/Icons";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 
 export default function Index({ headings = [] }) {
   const [open, setOpen] = useState(false);
@@ -41,11 +41,11 @@ export default function Index({ headings = [] }) {
           onClick={() => setOpen(!open)}
           className="bg-foreground/5 rounded-full p-3"
         >
-          <MenuIcon
+          <IconMenu2
             className={` ${open ? "opacity-0" : "rotate-180 opacity-100"} absolute`}
           />
 
-          <CloseIcon
+          <IconX
             className={`${open ? "opacity-100" : "rotate-180 opacity-0"} `}
           />
         </button>
