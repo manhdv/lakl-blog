@@ -1,14 +1,14 @@
 ---
-slug: "likes-in-luna"
-title: "Adding Anonymous Likes in Luna"
-description: "How to add a custom anonymous Likes feature in Luna."
+slug: "likes-in-Ryze"
+title: "Adding Anonymous Likes in Ryze"
+description: "How to add a custom anonymous Likes feature in Ryze."
 date: 2022-03-22
 author: "Rahul"
 image:
   url: "https://cdn.pixabay.com/photo/2023/07/01/18/21/water-8100724_1280.jpg"
   alt: "Shoreline of a lake with mountains in the background"
   caption: "photo by xyz : pixabay"
-tags: ["luna", "customize", "likes", "markdown"]
+tags: ["Ryze", "customize", "likes", "markdown"]
 
 featured: false
 ---
@@ -20,7 +20,7 @@ featured: false
 
 ## Instructions
 
-In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Luna.
+In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Ryze.
 
 1. Install the necessary remark and rehype plugins by running:
    ```bash

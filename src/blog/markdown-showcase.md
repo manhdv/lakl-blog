@@ -1,10 +1,10 @@
 ---
 slug: "markdown-showcase"
-title: "Luna Markdown Showcase: A Complete Guide"
-description: "A comprehensive showcase of all Markdown features and typography styles available in Luna blog posts."
+title: "Ryze Markdown Showcase: A Complete Guide"
+description: "A comprehensive showcase of all Markdown features and typography styles available in Ryze blog posts."
 date: 2025-11-09
 author: "Rahul"
-tags: ["luna", "markdown", "guide", "showcase"]
+tags: ["Ryze", "markdown", "guide", "showcase"]
 image:
   url: "https://cdn.pixabay.com/photo/2024/01/18/10/07/sunset-8516639_1280.jpg"
   alt: "Still waters reflecting clouds and distant mountains during sunset"
@@ -40,7 +40,7 @@ This paragraph comes after two line breaks.
 
 ### Links and References
 
-Visit [Luna's GitHub repository](https://github.com/yourusername/luna) for more information.
+Visit [Ryze's GitHub repository](https://github.com/yourusername/Ryze) for more information.
 
 ## Code Blocks
 
@@ -56,7 +56,7 @@ interface BlogPost {
 }
 
 const post: BlogPost = {
-  title: "Hello Luna",
+  title: "Hello Ryze",
   date: new Date(),
   tags: ["blog", "typescript"],
   featured: true,
@@ -79,7 +79,7 @@ const post: BlogPost = {
 
 ## Mathematics & Equations
 
-Luna supports LaTeX equations both inline and as blocks:
+Ryze supports LaTeX equations both inline and as blocks:
 
 Inline equation example: The Pythagorean theorem states that $a^2 + b^2 = c^2$
 
@@ -163,10 +163,10 @@ Text with `inline code` and <span class="text-accent">accent color</span>.
 
 ## Final Notes
 
-This post demonstrated all the Markdown features available in Luna blog posts. Remember that:
+This post demonstrated all the Markdown features available in Ryze blog posts. Remember that:
 
 1. Consistency is key
 2. Use formatting purposefully
 3. Keep your content readable
 
-> Thanks for reading this comprehensive guide to Luna's Markdown features!
+> Thanks for reading this comprehensive guide to Ryze's Markdown features!

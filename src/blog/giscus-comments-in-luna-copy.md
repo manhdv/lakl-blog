@@ -1,6 +1,6 @@
 ---
-slug: "giscus-comments-in-luna-copy"
-title: "How to integrate Giscus comments into Luna"
+slug: "giscus-comments-in-Ryze-copy"
+title: "How to integrate Giscus comments into Ryze"
 description: "Comment function on a static blog hosted on Github Pages with Giscus"
 date: 2022-03-20
 author: "Rahul"
@@ -8,7 +8,7 @@ image:
   url: "https://cdn.pixabay.com/photo/2022/06/21/21/56/konigssee-7276585_1280.jpg"
   alt: "Mountain landscape"
   caption: "photo by xyz : pixabay"
-tags: ["luna", "customize", "comments", "giscus"]
+tags: ["Ryze", "customize", "comments", "giscus"]
 
 featured: false
 ---
@@ -26,7 +26,7 @@ Github).
 <br />
 
 The approach is serverless, as the comments are stored on Github and dynamically
-loaded from there on client side, hence perfect for a static blog, like Luna.
+loaded from there on client side, hence perfect for a static blog, like Ryze.
 
 ## Setting up Giscus
 
@@ -51,7 +51,7 @@ To copy text, press <kbd>Ctrl</kbd> + <kbd>C</kbd>
 However you need to
 
 - select the right language for the UI
-- specify the Github repository you want to connect, typically the repository containing your statically hosted Luna blog on Github Pages
+- specify the Github repository you want to connect, typically the repository containing your statically hosted Ryze blog on Github Pages
 - create and set an `Announcement` type discussion on Github if you want to ensure nobody can create random comments directly on Github
 - define the color scheme
 
@@ -80,7 +80,7 @@ You should now have a script tag that looks like this:
 ></script>
 ```
 
-Simply add that to the source code of the site. Most likely, if you're using Luna and want to enable comments on posts, navigate to `PostDetails.astro` and paste it into the desired location where you want the comments to appear, perhaps underneath the `Share this post on:` buttons.
+Simply add that to the source code of the site. Most likely, if you're using Ryze and want to enable comments on posts, navigate to `PostDetails.astro` and paste it into the desired location where you want the comments to appear, perhaps underneath the `Share this post on:` buttons.
 
 ```astro
 <!-- src/layouts/PostDetails.astro -->
@@ -99,6 +99,6 @@ Simply add that to the source code of the site. Most likely, if you're using Lun
 </Layout>
 ```
 
-> And it's done! You have successfully integrated comments in Luna!
+> And it's done! You have successfully integrated comments in Ryze!
 
 > Thanks for reading this!

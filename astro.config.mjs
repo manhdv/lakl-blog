@@ -42,5 +42,5 @@ export default defineConfig({
   },
 
   output: "static",
-  site: "https://lunakit.netlify.app",
+  site: "https://ryze.pages.dev",
 });

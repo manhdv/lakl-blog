@@ -1,14 +1,14 @@
 ---
-slug: "luna-blog-pipeline-copy"
-title: "Workflow process for Luna blog posts"
-description: "Mardown blogs to automatic publish on Luna."
+slug: "Ryze-blog-pipeline-copy"
+title: "Workflow process for Ryze blog posts"
+description: "Mardown blogs to automatic publish on Ryze."
 date: 2022-03-22
 author: "Rahul"
 image:
   url: "https://cdn.pixabay.com/photo/2024/11/03/17/49/mountain-9172053_1280.jpg"
   alt: "Mountain landscape with hiking trail"
   caption: "photo by xyz : pixabay"
-tags: ["luna", "blog", "github", "markdown"]
+tags: ["Ryze", "blog", "github", "markdown"]
 
 featured: false
 ---
@@ -20,7 +20,7 @@ featured: false
 
 ## Instructions
 
-In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Luna.
+In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Ryze.
 
 1. Install the necessary remark and rehype plugins by running:
    ```bash

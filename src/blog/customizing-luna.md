@@ -1,21 +1,21 @@
 ---
-slug: "customizing-luna"
-title: "Customizing Luna color schemes"
-description: "How you can enable/disable light & dark mode; and customize color schemes of Luna."
+slug: "customizing-Ryze"
+title: "Customizing Ryze color schemes"
+description: "How you can enable/disable light & dark mode; and customize color schemes of Ryze."
 date: 2022-07-01
 author: "Rahul"
 image:
   url: "https://cdn.pixabay.com/photo/2020/01/24/12/29/konigssee-4790116_1280.jpg"
   alt: "Mountains and lake landscape"
   caption: "photo by xyz : pixabay"
-tags: ["luna", "customize", "color-scheme"]
+tags: ["Ryze", "customize", "color-scheme"]
 
 featured: true
 ---
 
 ## Enable/disable light & dark mode
 
-Luna theme will include light and dark mode by default. In other words, there will be two color schemes, one for **light** and another for **dark** mode. This default behavior can be disabled in `SITE` configuration object.
+Ryze theme will include light and dark mode by default. In other words, there will be two color schemes, one for **light** and another for **dark** mode. This default behavior can be disabled in `SITE` configuration object.
 
 ---
 
@@ -78,7 +78,7 @@ The **primaryColorScheme** variable can hold two values, `"light"`, `"dark"`. Yo
 
 ## Customize color schemes
 
-Both light & dark color schemes of Luna theme can be customized in the `global.css` file.
+Both light & dark color schemes of Ryze theme can be customized in the `global.css` file.
 
 ```css
 /* src/styles/global.css */
@@ -107,7 +107,7 @@ html[data-theme="dark"] {
 /* ... */
 ```
 
-In the Luna theme, the `:root` and `html[data-theme="light"]` selectors define the light color scheme, while `html[data-theme="dark"]` defines the dark color scheme.
+In the Ryze theme, the `:root` and `html[data-theme="light"]` selectors define the light color scheme, while `html[data-theme="dark"]` defines the dark color scheme.
 
 To customize your own color scheme, specify your light colors inside `:root, html[data-theme="light"]`, and your dark colors inside `html[data-theme="dark"]`.
 

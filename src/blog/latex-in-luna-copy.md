@@ -1,14 +1,14 @@
 ---
-slug: "latex-in-luna-copy"
-title: "How to add LaTeX equations in Luna"
-description: "How to use LaTeX equations in your Markdown files for Luna."
+slug: "latex-in-Ryze-copy"
+title: "How to add LaTeX equations in Ryze"
+description: "How to use LaTeX equations in your Markdown files for Ryze."
 date: 2022-03-22
 author: "Rahul"
 image:
   url: "https://cdn.pixabay.com/photo/2025/05/14/10/09/bridge-9599215_1280.jpg"
   alt: "Still lake reflecting a bridge, trees, and clouds during sunset"
   caption: "photo by xyz : pixabay"
-tags: ["luna", "customize", "latex", "markdown"]
+tags: ["Ryze", "customize", "latex", "markdown"]
 
 featured: false
 ---
@@ -23,7 +23,7 @@ featured: false
 
 ## Instructions
 
-In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Luna.
+In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Ryze.
 
 1. Install the necessary remark and rehype plugins by running:
    ```bash

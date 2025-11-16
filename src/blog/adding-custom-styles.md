@@ -1,14 +1,14 @@
 ---
 slug: "adding-custom-styles"
-title: "How to add custom tailwind classes in Luna"
-description: "How to add custom Tailwind CSS classes and LaTeX support in Markdown files for Luna."
+title: "How to add custom tailwind classes in Ryze"
+description: "How to add custom Tailwind CSS classes and LaTeX support in Markdown files for Ryze."
 date: 2022-04-13
 author: "Rahul"
 image:
   url: "https://cdn.pixabay.com/photo/2022/06/21/21/56/konigssee-7276585_1280.jpg"
   alt: "Mountain landscape"
   caption: "photo by xyz : pixabay"
-tags: ["luna", "customize", "tailwind", "markdown"]
+tags: ["Ryze", "customize", "tailwind", "markdown"]
 
 featured: false
 ---
@@ -20,7 +20,7 @@ featured: false
 
 ## Instructions
 
-In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Luna.
+In this section, you will find instructions on how to add support for LaTeX in your Markdown files for Ryze.
 
 1. Install the necessary remark and rehype plugins by running:
    ```bash
