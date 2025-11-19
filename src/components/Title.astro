@@ -11,42 +11,45 @@ const { frontmatter, readTime } = Astro.props;
 <h1 class="blog-title">
   {frontmatter.title}
 </h1>
-<div class="mt-2 space-y-1">
-  <div class="flex gap-8">
-    <div class="flex gap-2">
-      <IconCalendarWeek className="size-5 stroke-1" />
-      <p class="font-mono text-base opacity-90">
+<div class="flex items-center justify-between">
+  <div class="mt-2 space-y-1">
+    <div class="flex gap-8">
+      <div class="flex gap-2">
+        <IconCalendarWeek className="size-5 stroke-1" />
+        <p class="font-mono text-base opacity-90">
+          {
+            frontmatter.date
+              .toLocaleDateString("en-GB", {
+                day: "numeric",
+                month: "short",
+                year: "numeric",
+              })
+              .slice(0, 11)
+          }
+        </p>
+      </div>
+      <div class="flex gap-2">
+        <IconClockHour3 className="size-5 stroke-1" />
+        <p class="font-mono text-base opacity-90">{readTime} min read</p>
+      </div>
+    </div>
+    <div class="group flex items-center gap-2">
+      <IconTagFilled
+        className="fill-background stroke-foreground group-hover:fill-foreground group-hover:stroke-background size-5 stroke-1"
+      />
+      <div class="space-x-2">
         {
-          frontmatter.date
-            .toLocaleDateString("en-GB", {
-              day: "numeric",
-              month: "short",
-              year: "numeric",
-            })
-            .slice(0, 11)
+          frontmatter.tags.map((tag: string) => (
+            <a
+              href={`/tags/${tag}/1`}
+              class="hover:text-accent text-base opacity-90"
+            >
+              {tag}
+            </a>
+          ))
         }
-      </p>
-    </div>
-    <div class="flex gap-2">
-      <IconClockHour3 className="size-5 stroke-1" />
-      <p class="font-mono text-base opacity-90">{readTime} min read</p>
+      </div>
     </div>
   </div>
-  <div class="group flex items-center gap-2">
-    <IconTagFilled
-      className="fill-background stroke-foreground group-hover:fill-foreground group-hover:stroke-background size-5 stroke-1"
-    />
-    <div class="space-x-2">
-      {
-        frontmatter.tags.map((tag: string) => (
-          <a
-            href={`/tags/${tag}/1`}
-            class="hover:text-accent text-base opacity-90"
-          >
-            {tag}
-          </a>
-        ))
-      }
-    </div>
-  </div>
+  <a href="/share"></a>
 </div>
