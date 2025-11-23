@@ -573,9 +573,8 @@ Tailwind's utility-first approach means you build designs by composing small, re
 You can look through some of the custom tailwind classes for this template in `src/styles/utility.css`. For markdown typography styles, see `src/styles/typography.css`.
 
 <br />
-
 <br />
 
-The starter is designed to be your foundation, not your limitation. Extend it, modify it, and make it your own. Happy building!
+The starter is designed to be your foundation, not your limitation. Extend it, modify it, and make it your own. Happy building with Ryze!
 
 ---
