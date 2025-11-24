@@ -1,7 +1,7 @@
 ---
-slug: "setting-up-ryze"
-title: "Setting Up and Running Ryze"
-description: "Step-by-step setup for Ryze with exact commands, common failures and fixes, and where to look next."
+slug: "ryze-setup"
+title: "Setting Up and Running Ryze Locally"
+description: "Complete local setup for Ryze with clone, install, and run commands, common troubleshooting fixes, and recommended next steps."
 date: 2025-11-21
 author: "Rahul"
 tags: ["ryze", "setup", "development"]
@@ -244,6 +244,6 @@ Now that your project is set up and running, you're ready to start building:
 <br />
 <br />
 
-To know more about how Ryze is being deployed, check out [Deploying Ryze using Cloudflare](https://ryze.pages.dev/deploying-ryze).
+To know more about how Ryze is being deployed, check out [Deploying Ryze using Cloudflare](https://ryze.pages.dev/deploying-ryze). Happy coding!
 
 ---

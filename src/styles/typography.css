@@ -47,7 +47,7 @@
 
   /* common */
   .paragraph {
-    @apply space-y-6 text-lg leading-relaxed opacity-90;
+    @apply space-y-6 text-lg leading-relaxed opacity-90 dark:opacity-80;
   }
   .link {
     @apply text-accent active:text-foreground decoration-dashed underline-offset-3 transition-all duration-100 ease-in-out hover:underline hover:underline-offset-6;
@@ -143,7 +143,7 @@
       @apply ring-accent my-6 p-6 ring-1;
     }
     .astro-code code {
-      @apply bg-inherit p-0;
+      @apply bg-inherit p-0 font-medium;
     }
     code {
       @apply bg-accent text-background rounded-lg px-2 py-0.5 font-mono text-base font-semibold opacity-90;

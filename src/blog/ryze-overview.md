@@ -1,10 +1,10 @@
 ---
 slug: "ryze-overview"
 title: "Ryze -  Project Overview & Starter Guide"
-description: "Complete overview and feature set of Ryze Astro starter"
+description: "Complete overview and feature set of Ryze Astro starter along with layouts and components included."
 date: 2025-11-20
 author: "Rahul"
-tags: ["ryze", "astro", "theme", "guide"]
+tags: ["ryze", "astro", "template", "guide"]
 featured: true
 ---
 
@@ -575,6 +575,6 @@ You can look through some of the custom tailwind classes for this template in `s
 <br />
 <br />
 
-The starter is designed to be your foundation, not your limitation. Extend it, modify it, and make it your own. Happy building with Ryze!
+The starter is designed to be your foundation, not your limitation. Extend it, modify it, and make it your own. Happy building!
 
 ---
