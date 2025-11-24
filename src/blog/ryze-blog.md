@@ -1,5 +1,5 @@
 ---
-slug: "creating-your-first-blog"
+slug: "ryze-blog"
 title: "Creating Your First Blog Post with Ryze"
 description: "A practical walkthrough for writing, previewing, and publishing your first blog using the Ryze Astro + Tailwind starter"
 date: 2025-11-23
