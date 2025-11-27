@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-// import IconMoon from "../assets/icons/moon.svg";
-// import IconSun from "../assets/icons/sun-high.svg";
+// @ts-ignore
+import IconMoon from "../assets/icons/moon.svg?react";
+// @ts-ignore
+import IconSun from "../assets/icons/sun-high.svg?react";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("");
@@ -73,11 +75,9 @@ export default function ThemeToggle() {
       title={`Activate ${theme === "light" ? "dark" : "light"} mode`}
     >
       {theme === "light" ? (
-        // <IconMoon className="active:fill-foreground size-5" />
-        <h1>dark</h1>
+        <IconMoon className="active:fill-foreground size-5" />
       ) : (
-        // <IconSun className="active:fill-foreground size-5" />
-        <h1>light</h1>
+        <IconSun className="active:fill-foreground size-5" />
       )}
     </button>
   );
