@@ -8,7 +8,7 @@ import IconClockHour3 from "../assets/icons/clock-hour-3.svg";
 
 <a
   href={url}
-  class="hover:bg-accent hover:ring-accent group ring-background animation flex h-full flex-col gap-3 rounded-lg shadow-lg ring-3 select-none hover:shadow-none hover:ring-3 active:ring-0 dark:shadow-2xl"
+  class="hover:bg-accent hover:ring-accent group ring-background animation flex h-full flex-col gap-3 rounded-lg pb-3 shadow-lg ring-3 select-none hover:shadow-none hover:ring-3 active:ring-0 dark:shadow-2xl"
 >
   <div class="mx-4 mt-2 flex justify-between gap-6">
     <h3
@@ -26,10 +26,10 @@ import IconClockHour3 from "../assets/icons/clock-hour-3.svg";
     </div>
   </div>
   <div>
-    <div class="mx-4 mb-3 flex flex-wrap gap-6 group-hover:mb-0">
+    <div class="mx-4 flex flex-wrap gap-6 group-hover:mb-0">
       <div class="flex gap-1 font-mono">
         <IconCalendarWeek
-          class="stroke-foreground animation size-4 stroke-1 group-hover:size-0"
+          class="stroke-foreground animation size-4 translate-y-0.25 stroke-1 group-hover:size-0"
         />
         <p class="animation text-sm opacity-90 group-hover:text-[0rem]">
           {date}
@@ -37,7 +37,7 @@ import IconClockHour3 from "../assets/icons/clock-hour-3.svg";
       </div>
       <div class="flex gap-1 font-mono">
         <IconClockHour3
-          class="stroke-foreground animation size-4 stroke-1 group-hover:size-0"
+          class="stroke-foreground animation size-4 translate-y-0.5 stroke-1 group-hover:size-0"
         />
         <p class="animation text-sm opacity-90 group-hover:text-[0rem]">
           {readTime} min read
@@ -47,7 +47,7 @@ import IconClockHour3 from "../assets/icons/clock-hour-3.svg";
     <div class="mx-3 flex flex-wrap">
       {
         tags.map((tag: string) => (
-          <p class="ring-foreground bg-background animation mx-1 mb-0 rounded-lg px-3 pb-0.5 text-[0rem] opacity-90 group-hover:mb-0 group-hover:text-sm">
+          <p class="ring-foreground bg-background animation mx-1 rounded-lg px-3 pb-0.5 text-[0rem] opacity-90 group-hover:text-sm">
             {tag}
           </p>
         ))
