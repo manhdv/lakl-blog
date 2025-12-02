@@ -12,7 +12,7 @@ editable: false
 
 <hr />
 
-## Introduction
+## [Introduction](#introduction)
 
 Ryze is a modern, content-first and responsive Astro template / theme built to be small, fast, and scalable. This guide gives you a no-nonsense reference on what Ryze provides out of the box, how to run it locally, and where to make common edits.
 
@@ -22,7 +22,7 @@ See the [SOURCE CODE](https://github.com/8366888C/Ryze) for more details.
 
 <br />
 
-#### What Ryze ships
+#### [What Ryze ships](#what-ryze-ships)
 
 - **Astro v5**: server-side-compiled static pages and components. Astro renders to static HTML by default, so pages load fast and ship zero JS unless using islands.
 - **Tailwind CSS v4**: utility-first styling with theme and typography changes by extending colors, spacing, font-family and more. Mobile first responsive design baked in.
@@ -31,7 +31,7 @@ See the [SOURCE CODE](https://github.com/8366888C/Ryze) for more details.
 - **Shiki syntax highlighting and themes**: beautiful, performant code blocks with a variety of themes. Supports multiple languages and custom styling.
 - **SEO and editorial features**: meta tags, OG graph, robots.txt, RSS, sitemap integration, featured blogs and tags along with year-base categorization.
 
-#### Lighthouse Performance Scores
+#### [Lighthouse Performance Scores](#lighthouse-performance-scores)
 
 <figure class="group">
   <a href="https://pagespeed.web.dev/analysis/https-ryze-pages-dev/rg7pfbgh1l?form_factor=desktop">
@@ -144,7 +144,7 @@ This metadata is parsed and available to your layout templates, enabling automat
 
 <br />
 
-## Project Structure
+## [Project Structure](#project-structure)
 
 ```
 Ryze

@@ -82,7 +82,7 @@ git push origin main
 
 After push, your hosting platform will pick up the build. Verify on production once deployment completes.
 
-## Notes and Best Practices
+## [Notes and Best Practices](#notes-and-best-practices)
 
 - Use `.md` unless you need React components, then use `.mdx`.
 - Name files in **kebab case**, keep **slug** stable after publish.
