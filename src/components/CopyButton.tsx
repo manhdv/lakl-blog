@@ -19,6 +19,7 @@ export default function CopyButton() {
       title={copied ? "copied" : "copy url"}
       className="flex"
     >
+      <a href=""></a>
       <IconCheck
         className={`${copied ? "size-6 opacity-100" : "size-0 opacity-0"} animation stroke-foreground animation stroke-2`}
       />

@@ -25,15 +25,13 @@ const { title, description, author, url, pubDate } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <Seo {title} {description} {author} {url} {pubDate} />
     <script is:inline>
-      (function () {
-        const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)",
-        ).matches;
-        document.documentElement.classList.add(
-          saved || (prefersDark ? "dark" : "light"),
-        );
-      })();
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      document.documentElement.classList.add(
+        saved || (prefersDark ? "dark" : "light"),
+      );
     </script>
   </head>
   <body class="body-margin">

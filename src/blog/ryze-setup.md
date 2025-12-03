@@ -212,6 +212,7 @@ date: 2025-01-01
 author: "Your Name"
 tags: ["tag1", "tag2"]
 featured: true
+editable: false
 ---
 ```
 
@@ -245,6 +246,6 @@ Now that your project is set up and running, you're ready to start building:
 <br />
 <br />
 
-To know more about how Ryze is being deployed, check out [Deploying Ryze using Cloudflare](https://ryze.pages.dev/deploying-ryze). Happy coding!
+To know more about how Ryze is being deployed, check out [Deploying Ryze using Cloudflare](https://ryze.pages.dev/ryze-deploy). Happy coding!
 
 ---

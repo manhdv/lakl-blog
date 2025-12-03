@@ -7,14 +7,13 @@ author: "Rahul"
 tags: ["ryze", "astro", "template", "guide"]
 featured: true
 editable: false
-
 ---
 
 <hr />
 
 ## [Introduction](#introduction)
 
-Ryze is a modern, content-first and responsive Astro template / theme built to be small, fast, and scalable. This guide gives you a no-nonsense reference on what Ryze provides out of the box, how to run it locally, and where to make common edits.
+Ryze is a modern, content-first and responsive Astro template built to be small, fast, and scalable. This guide gives you a no-nonsense reference on what Ryze provides out of the box, how to run it locally, and where to make common edits.
 
 <br />
 
@@ -137,6 +136,7 @@ date: 2025-11-19
 author: "Your Name"
 tags: ["tag1", "tag2"]
 featured: true
+editable: false
 ---
 ```
 
@@ -152,28 +152,29 @@ Ryze
 │   └── favicon.svg
 │
 ├── src/
+│   ├── assets/
+│   │   └── ... (static assets like fonts, icons)
 │   ├── blog/
 │   │   ├── post-title.md
 │   │   ├── another-post.md
 │   │   └── ... (add your posts here)
 │   │
 │   ├── components/
-│   │   ├── Header.astro
-│   │   ├── Footer.astro
-│   │   ├── Navigation.astro
-│   │   ├── Seo.astro
-│   │   ├── Title.astro
-│   │   ├── PostCard.astro
-│   │   ├── Featured.astro
-│   │   ├── PostNavigation.astro
-│   │   ├── Pagination.astro
-│   │   ├── ThemeToggle.tsx
-│   │   ├── ProgressBar.tsx
-│   │   ├── Index.tsx
-│   │   ├── Introduction.astro
-│   │   ├── Newsletter.astro
-│   │   ├── Socials.astro
+|   |   ├── CopyButton.astro
 │   │   ├── FeatureCard.astro
+│   │   ├── Featured.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── Introduction.astro
+│   │   ├── Navigation.astro
+│   │   ├── Newsletterastro
+│   │   ├── Pagination.astro
+│   │   ├── PostCard.astro
+│   │   ├── ProgressBar.tsx
+│   │   ├── Seo.astro
+│   │   ├── Socials.astro
+│   │   ├── ThemeToggle.tsx
+│   │   ├── Title.astro
 │   │   └── Year.astro
 │   │
 │   ├── layouts/
@@ -197,12 +198,9 @@ Ryze
 │   │   ├── global.css
 │   │   └── typography.css
 │   │
-│   ├── image/
-│   │   ├── astro.svg
-│   │   └── background.svg
-│   │
 │   └── content.config.ts
 │
+├── .gitignore
 ├── .prettierrc
 ├── astro.config.mjs
 ├── tsconfig.json
@@ -222,7 +220,9 @@ The starter uses a thoughtful organizational system:
 - **src/layouts**: Reusable page templates for consistency across your site
 - **src/components**: Modular UI pieces that you can combine to build pages
 - **src/blog**: Markdown content files with structured metadata
-- **src/image**: Static content images used across the site
+- **src/assets**: Static content images and fonts used across the site
+
+<br />
 
 This structure scales beautifully. Whether you have 5 pages or 500, everything stays organized and maintainable.
 
@@ -254,30 +254,48 @@ Here you can:
 - Define output and build options
 - Set your site URL for SEO
 
-```javascript
+<br />
+
+```typescript
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
+import vitePluginSvgr from "vite-plugin-svgr";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss(), vitePluginSvgr({})],
+  },
+  devToolbar: {
+    enabled: false,
   },
   integrations: [react(), sitemap()],
 
   markdown: {
     shikiConfig: {
-      markdown shikiConfig ...
+      defaultColor: false,
+      themes: {
+        light: "github-light-high-contrast", // one-light
+        dark: "github-dark", // plastic
+      },
+      wrap: true,
     },
+  },
+
+  prefetch: {
+    prefetchAll: true,
+    // defaultStrategy: "load",
   },
 
   output: "static",
   site: "https://ryze.pages.dev",
 });
 ```
+
+<br />
 
 #### [package.json](#packagejson)
 
@@ -328,10 +346,11 @@ export interface Props {
   pubDate?: Date;
 }
 
+import "@fontsource-variable/space-grotesk";
+import "@fontsource/ibm-plex-mono";
 import Seo from "../components/Seo.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import "@fontsource/font-name";
 import "../styles/global.css";
 const { title, description, author, url, pubDate } = Astro.props;
 ---
@@ -345,12 +364,18 @@ const { title, description, author, url, pubDate } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <Seo {title} {description} {author} {url} {pubDate} />
     <script is:inline>
-      custom scripts ...
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      document.documentElement.classList.add(
+        saved || (prefersDark ? "dark" : "light"),
+      );
     </script>
   </head>
-  <body class="body-tailwind-classes">
+  <body class="body-margin">
     <Header />
-    <main class="main-tailwind-classes">
+    <main class="main-margin bg-background relative z-1 min-h-svh">
       <slot />
     </main>
     <Footer />
@@ -436,8 +461,8 @@ import { IconRss } from "@tabler/icons-react";
     <div class="flex items-center justify-center gap-4">
       <ThemeToggle client:load />
       <a href="/rss.xml" aria-label="rss" title="rss">
-	  	<IconRss className="active-foreground size-5" />
-	  </a>
+        <IconRss className="active-foreground size-5" />
+      </a>
     </div>
   </div>
 </header>
@@ -464,7 +489,8 @@ import Socials from "./Socials.astro";
   <Socials />
   <div>
     <p>© 2025 MIT License</p>
-    <p>powered by <a
+    <p>
+      powered by <a
         href="https://astro.build"
         target="blank"
         class="hover:text-accent"
@@ -503,11 +529,7 @@ const { title, date, url, tags } = Astro.props;
   </div>
   <div>
     <div class="mx-3 flex flex-wrap">
-      {
-        tags.map((tag: string) => (
-          <p>{tag}</p>
-        ))
-      }
+      {tags.map((tag: string) => <p>{tag}</p>)}
     </div>
   </div>
 </a>

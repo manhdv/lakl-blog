@@ -1,6 +1,6 @@
 # Ryze
 
-**Ryze** is a modern, minimalist theme / template built with **Astro v5**, **Tailwind CSS v4**, and optimized for static sites, responsiveness, and SEO. Perfect for personal blogs and content-focused websites.
+**Ryze** is a modern, reader-friendly and content-first starter built with **Astro v5**, **Tailwind CSS v4**, and optimized for SEO and responsiveness across all devices. Perfect for personal blogs and content-focused websites.
 
 Read the [blog posts](https://ryze.pages.dev/) to understand how Ryze is built and how to customize it for your own site.
 
@@ -32,33 +32,34 @@ Read the [blog posts](https://ryze.pages.dev/) to understand how Ryze is built a
 ## Project Structure
 
 ```
-/
+Ryze
 ├── public/
 │   └── favicon.svg
 │
 ├── src/
+│   ├── assets/
+│   │   └── ... (static assets like fonts, icons)
 │   ├── blog/
 │   │   ├── post-title.md
 │   │   ├── another-post.md
 │   │   └── ... (add your posts here)
 │   │
 │   ├── components/
-│   │   ├── Header.astro
-│   │   ├── Footer.astro
-│   │   ├── Navigation.astro
-│   │   ├── Seo.astro
-│   │   ├── Title.astro
-│   │   ├── PostCard.astro
-│   │   ├── Featured.astro
-│   │   ├── PostNavigation.astro
-│   │   ├── Pagination.astro
-│   │   ├── ThemeToggle.tsx
-│   │   ├── ProgressBar.tsx
-│   │   ├── Index.tsx
-│   │   ├── Introduction.astro
-│   │   ├── Newsletter.astro
-│   │   ├── Socials.astro
+|   |   ├── CopyButton.astro
 │   │   ├── FeatureCard.astro
+│   │   ├── Featured.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── Introduction.astro
+│   │   ├── Navigation.astro
+│   │   ├── Newsletterastro
+│   │   ├── Pagination.astro
+│   │   ├── PostCard.astro
+│   │   ├── ProgressBar.tsx
+│   │   ├── Seo.astro
+│   │   ├── Socials.astro
+│   │   ├── ThemeToggle.tsx
+│   │   ├── Title.astro
 │   │   └── Year.astro
 │   │
 │   ├── layouts/
@@ -82,15 +83,15 @@ Read the [blog posts](https://ryze.pages.dev/) to understand how Ryze is built a
 │   │   ├── global.css
 │   │   └── typography.css
 │   │
-│   ├── image/
-│   │
 │   └── content.config.ts
 │
+├── .gitignore
+├── .prettierrc
 ├── astro.config.mjs
-├── tailwind.config.js
 ├── tsconfig.json
 ├── eslint.config.js
 ├── package.json
+├── LICENSE
 └── README.md
 ```
 
@@ -112,7 +113,8 @@ Read the [blog posts](https://ryze.pages.dev/) to understand how Ryze is built a
 
 ```bash
 # Clone or download the project
-cd ryze
+git clone https://github.com/8366888C/Ryze.git
+cd Ryze
 
 # Install dependencies
 npm install
@@ -132,10 +134,6 @@ The site will be available at `http://localhost:4321`
 | `npm run preview`   | Preview production build locally   |
 | `npm run astro ...` | Run Astro CLI commands             |
 
-## Feedback & Suggestions
+## License
 
-Have feedback or ideas? Reach out via [email](mailto:deploy.rahul@gmail.com) or [open an issue](https://github.com/yourusername/ryze/issues) to report bugs or suggest new features.
-
-## 📜 License
-
-See [LICENSE](LICENSE) for more information.
+This project is open source. See [LICENSE](LICENSE) for more information.
