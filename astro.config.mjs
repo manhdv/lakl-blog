@@ -32,5 +32,5 @@ export default defineConfig({
   },
 
   output: "static",
-  site: "https:lakl.net",
+  site: "https://lakl.net",
 });
