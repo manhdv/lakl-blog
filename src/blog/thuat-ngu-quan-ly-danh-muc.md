@@ -4,7 +4,7 @@ title: "Các thuật ngữ quan trọng trong quản lý danh mục"
 description: "Bộ giải thích ngắn gọn các chỉ số đánh giá hiệu quả danh mục — IRR, TWR, MWR, XIRR — hiểu nhanh để không tự ảo tưởng về lợi nhuận."
 date: 2025-11-26
 author: "Mage"
-tags: ["đầu-tư", "danh-mục"]
+tags: ["đầu tư", "danh mục"]
 featured: false
 editable: false
 ---

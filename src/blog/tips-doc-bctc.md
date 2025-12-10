@@ -4,7 +4,7 @@ title: "Tips đọc báo cáo tài chính"
 description: "Bỏ lợi nhuận sang một bên và soi thẳng dòng tiền, tồn kho, phải thu để biết doanh nghiệp khỏe thật hay đang hóa trang."
 date: 2025-11-25
 author: "Mage"
-tags: ["đầu-tư", "BCTC", "kinh-nghiệm"]
+tags: ["đầu tư", "BCTC", "kinh nghiệm"]
 featured: true
 editable: false
 ---

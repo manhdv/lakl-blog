@@ -4,7 +4,7 @@ title: "VNDiamond là gì"
 description: "VNDiamond là gì? Bản tóm gọn cho người lười đọc báo cáo"
 date: 2025-12-08
 author: "Mage"
-tags: ["đầu-tư", "ETF"]
+tags: ["đầu tư", "ETF"]
 featured: true
 editable: false
 ---

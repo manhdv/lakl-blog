@@ -4,7 +4,7 @@ title: "Hiệu quả đầu tư"
 description: "Tổng hợp danh mục cổ phiếu, số lượng nắm giữ, giá trung bình và hiệu quả đầu tư."
 date: 2025-11-23
 author: "Mage"
-tags: ["đầu-tư", "danh-mục", "hiệu-quả"]
+tags: ["đầu tư", "danh mục"]
 featured: true
 editable: false
 ---

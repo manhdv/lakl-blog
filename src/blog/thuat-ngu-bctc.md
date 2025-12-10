@@ -4,7 +4,7 @@ title: "Các thuật ngữ trong báo cáo tài chính"
 description: "Bộ giải mã nhanh các thuật ngữ khó chịu trong báo cáo tài chính — đọc xong hiểu ngay 80% mà không cần thi CFA."
 date: 2025-11-26
 author: "Mage"
-tags: ["đầu-tư", "BCTC", "kinh-nghiệm"]
+tags: ["đầu tư", "BCTC", "kinh nghiệm"]
 featured: false
 editable: false
 
