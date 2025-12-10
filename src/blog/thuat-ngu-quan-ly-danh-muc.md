@@ -91,9 +91,9 @@ Thấp ⇒ danh mục trade như phê thuốc.
 
 Nó đo xem lợi nhuận có **xứng đáng với rủi ro bạn chịu** không.
 
-- > 1: sống được  
-- > 2: ổn  
-- > 3: huyền thoại (hoặc backtest lừa đảo)
+- 1: sống được  
+- 2: ổn  
+- 3: huyền thoại (hoặc backtest lừa đảo)
 
 Nhược điểm: Sharpe phạt cả biến động **tăng** và **giảm** như nhau — hơi ngu.
 
